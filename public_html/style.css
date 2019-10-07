@@ -1,0 +1,5 @@
+form[name=new_task] {display: none;}
+ul.list-group {list-style-type: none;}
+.editable, .sort {cursor: pointer;}
+.sort[data-sort=asc]:after {content: '\f0dd'; font-weight: 900; font-family: "Font Awesome 5 Free"; position: relative; top: -4px; left: 4px;}
+.sort[data-sort=desc]:after {content: '\f0de'; font-weight: 900; font-family: "Font Awesome 5 Free"; position: relative; top: 4px; left: 4px;}
