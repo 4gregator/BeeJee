@@ -37,9 +37,11 @@ function edit_task(type,e) {
 	let id = $(e.target).parents('li').attr('id'),
 		val = type == 'text' ? $(e.target).html() : $(e.target).prop('checked');
 	
-	$.post('edit.php',{
-		edit:type,
-		task_id:id,
-		value:val
-	});
+	if (document.cookie == iddqd=admin) {
+		$.post('edit.php',{
+			edit:type,
+			task_id:id,
+			value:val
+		});
+	} else return false;
 }
